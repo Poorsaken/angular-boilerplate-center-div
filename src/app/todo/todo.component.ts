@@ -14,14 +14,16 @@ export class TodoComponent {
 
   pushItemToList() {
 
-
-    if (this.todoItem.valid) {
-
-      this.todoList.push(this.todoItem.value as string);
-      this.todoItem.setValue("")
+    if (!this.todoItem.value){
+      alert("Please Enter Something huhuh");
+      return;
     }
-    // this.todoList.push(this.todoItem.value as string)
 
-    // this.todoItem.setValue("")
+    if( this.todoItem.valid){
+      this.todoList.push(this.todoItem.value as string);
+
+      this.todoItem.setValue('');
+    }
+    
   }
 }
