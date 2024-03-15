@@ -4,3 +4,7 @@
 @tailwind utilities;
 
 
+*{
+
+    @apply bg-[#ececec]  
+}
