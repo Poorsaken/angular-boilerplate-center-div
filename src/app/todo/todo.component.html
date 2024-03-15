@@ -1,0 +1,18 @@
+ <div class="size-1/4 bg-red-200 flex flex-col text-center p-4">
+<label for="todoItem"> ToDo Item </label>
+
+<input type="text" name="todoItem" id="todoItem" [formControl]="todoItem"/>
+<button (click)="pushItemToList()"> Add to List</button>
+
+<div class="bg-slate-300">
+    <ol>
+        @for (item of todoList; track item) {
+            <li>{{item}}</li>
+        }
+    </ol>
+</div>
+</div> 
+
+
+
+
