@@ -1,0 +1,50 @@
+
+
+
+@screen md {
+  /* styles for screens with a min-width of 768px */
+
+
+  
+}
+
+@screen lg {
+  /* styles for screens with a min-width of 1024px */
+      .wrapper{
+    @apply bg-white w-[710px] h-[990px] ;
+  }
+
+  input {
+
+    @apply bg-[#F5F5F7] w-[200px] h-[70px];
+  }
+    .each {
+    @apply text-[100px]
+  }
+
+
+
+
+}
+@screen sm {
+  /* styles for screens with a min-width of 640px */
+  .wrapper{
+    @apply bg-white mx-auto w-[510px] h-[810px] px-10  ;
+  }
+
+  .wrapper-parent {
+
+    @apply pt-20 ;
+  }
+
+  input {
+
+   @apply bg-[#F5F5F7] w-[400px] h-[70px] mt-5 mb-5 ;
+  }
+    .each {
+    @apply text-[12px]
+  }
+
+
+
+}

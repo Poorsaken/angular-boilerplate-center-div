@@ -1,34 +1,38 @@
 
 
+<div class="wrapper-parent">
 
-<div class="w-[710px] h-[910px] mt-5 ml-[70px] pt-[55px] pl-10 pr-10 rounded-lg bg-[#FFFFFF]">
+
+<div class=" wrapper  rounded-lg bg-[#FFFFFF]">
      
-<label for="todoItem ">
+<label for="todoItem">
 
-    <div class="text-[48px] bg-transparent " style="font-family: 'Monorama';">To Do List</div>
+    <div class="text-[35px] pt-10 bg-transparent " style="font-family: 'Monorama';">To Do List</div>
 </label>
 
 <div class="bg-transparent h-[400px]">
 
    
-    <ol class="bg-transparent" >
+    <ol class="bg-transparent overflow-visible" >
         @for (item of todoList; track item) {
-            <li class="bg-transparent text-[20px] pl-[20px]" style="font-family: 'Chakra Petch';" >• {{item}}</li>
+            <li class="bg-transparent text-[20px] pl-[20px] whitespace-normal" style="font-family: 'Chakra Petch';" >• {{item}}</li>
         }
     </ol>
 </div>
 
 
-<div class="text-[35px]  p-5 rounded-lg" style="font-family: 'Monorama';">
-    New Todo
-   <input class="bg-[#FFFFFF] rounded-[10px] w-[590px] h-[70px] pl-[20px] text-[20px] " placeholder="Add Todo.. " type="text" name="todoItem" id="todoItem" [formControl]="todoItem"/>
+<div class="text-[35px]  rounded-lg" style="font-family: 'Monorama';">
+    <h1>New Todo</h1>
+   <input class="bg-[#FFFFFF] rounded-[10px]  pl-[20px] text-[20px] " placeholder="Add Todo.. " type="text" name="todoItem" id="todoItem" [formControl]="todoItem"/>
 
 </div>
  
-<button class="bg-[#1d1d1f] text-[#FFFFFF] w-[200px] h-[50px] rounded-[150px] mt-[25px]" (click)="pushItemToList()"> Add ToDo</button> 
+<button class="bg-[#1d1d1f] text-[#FFFFFF] w-[200px] h-[50px] rounded-[150px] " (click)="pushItemToList()"> Add ToDo</button> 
 
 <div class="bg-transparent">
-    <p class=" bg-transparent mt-[25px] opacity-50" style="font-family: 'Chakra Petch'; ">Each tick represents not just a task completed, but a step closer to realizing our aspirations and shaping our destiny. In the symphony of existence, let Taskify be your conductor, orchestrating harmony amidst life's cacophony.</p>
+    <p class="each bg-transparent mt-[25px] opacity-50" style="font-family: 'Chakra Petch'; ">Each tick represents not just a task completed, but a step closer to realizing our aspirations and shaping our destiny. In the symphony of existence, let Taskify be your conductor, orchestrating harmony amidst life's cacophony.</p>
+</div>
+
 </div>
 
 </div>
